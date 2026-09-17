@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Grünschnitt-Kalkulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Garten-Kalkulator</h1>
+
+        <!-- Rasen-Sektion -->
+        <div class="card">
+            <h2>1. Rasen mähen</h2>
+            <label for="rasenFlaeche">Fläche in m²:</label>
+            <input type="number" id="rasenFlaeche" placeholder="z. B. 200" value="0">
+
+            <label for="rasenHoehe">Rasenzustand:</label>
+            <select id="rasenHoehe">
+                <option value="kurz">Kurz / Regelmäßiger Schnitt</option>
+                <option value="mittel">Mittel / Seit Wochen unberührt</option>
+                <option value="hoch">Überwachsen / Wiese</option>
+            </select>
+        </div>
+
+        <!-- Hecken-Sektion -->
+        <div class="card">
+            <h2>2. Heckenschnitt</h2>
+            <label for="heckenLaenge">Heckenlänge in Metern:</label>
+            <input type="number" id="heckenLaenge" placeholder="z. B. 15" value="0">
+
+            <label for="heckenHoehe">Heckenhöhe in Metern:</label>
+            <input type="number" id="heckenHoehe" placeholder="z. B. 2.0" value="2.0" step="0.1">
+
+            <label for="heckenSchnitt">Schnittart:</label>
+            <select id="heckenSchnitt">
+                <option value="pflege">Pflegeschnitt (Form)</option>
+                <option value="rueck">Starker Rückschnitt / Verjüngung</option>
+            </select>
+        </div>
+
+                <!-- Ergebnis-Box mit Preiskalkulation -->
+        <div class="card result-card" id="ergebnis" style="display: none;">
+            <h2>Ergebnis-Schätzung</h2>
+            <p><strong>Gesamtdauer:</strong> <span id="resZeit">0</span></p>
+            <p><strong>Grünschnitt-Volumen:</strong> <span id="resVolumen">0</span> m³</p>
+            <p><strong>Big Bags (90x90x90 cm):</strong> ca. <span id="resBags">0</span> Stück</p>
+            
+            <hr style="border: 0.5px solid #2c2c2e; margin: 12px 0;">
+
+            <p><strong>Arbeitskosten (<span id="resHoursBilled">0</span> Std. à 49 €):</strong> <span id="resLaborCost">0</span> €</p>
+            <p><strong>Entsorgung (<span id="resBagsBilled">0</span> Bag/s à 49 €):</strong> <span id="resDisposalCost">0</span> €</p>
+            <p class="highlight"><strong>Gesamtpreis (gemäß § 19 UStG):</strong> <span id="resTotalPrice">0</span> €</p>
+        </div>
+<html>

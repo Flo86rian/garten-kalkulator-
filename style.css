@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: #121212;
+    color: #f0f0f0;
+    padding: 15px;
+}
+
+.container {
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #34c759;
+}
+
+.card {
+    background-color: #1c1c1e;
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 15px;
+    border: 1px solid #2c2c2e;
+}
+
+.card h2 {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+    color: #0a84ff;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 4px;
+    font-size: 0.85rem;
+    color: #a0a0a0;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #3a3a3c;
+    background-color: #2c2c2e;
+    color: #fff;
+    font-size: 1rem;
+}
+
+button {
+    width: 100%;
+    padding: 16px;
+    background-color: #34c759;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.result-card {
+    background-color: #162519;
+    border: 1px solid #34c759;
+}
+
+.result-card p {
+    margin-bottom: 8px;
+    font-size: 1rem;
+}
+
+.highlight {
+    font-size: 1.1rem !important;
+    color: #ffd60a;
+    margin-top: 12px;
+}
